@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Types.fs" />
+        <Compile Include="Cars.fs" />
+        <Compile Include="Banks.fs" />
+        <Compile Include="Simulator.fs" />
+    </ItemGroup>
+
+</Project>

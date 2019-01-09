@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8c7514df-03ca-4649-90c7-9920be90502c" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ElevatorLib/Cars.fs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="224" column="59" selection-start-line="224" selection-start-column="59" selection-end-line="224" selection-end-column="59" />
+              <folding>
+                <marker date="1547008090514" expanded="true" signature="23:9415" ph=" ..." />
+                <marker date="1547008090514" expanded="true" signature="71:208" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="92:208" ph=" ..." />
+                <marker date="1547008090514" expanded="true" signature="237:510" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="260:447" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="285:447" ph=" ..." />
+                <marker date="1547008090514" expanded="true" signature="528:659" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="549:659" ph=" ..." />
+                <marker date="1547008090514" expanded="true" signature="676:743" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="697:743" ph=" ..." />
+                <marker date="1547008090514" expanded="true" signature="770:883" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="806:883" ph=" ..." />
+                <marker date="1547008090514" expanded="true" signature="913:1008" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="971:1008" ph=" ..." />
+                <marker date="1547008090514" expanded="true" signature="1039:1084" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="1112:1160" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="1184:1248" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="1203:1248" ph=" then ..." />
+                <marker date="1547008090514" expanded="true" signature="1264:1327" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="1285:1327" ph=" ..." />
+                <marker date="1547008090514" expanded="true" signature="1329:1433" ph="//let totalQueueLength queue = ..." />
+                <marker date="1547008090514" expanded="true" signature="1493:2308" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="1496:2302" ph="//    let timeToCompleteCurrentJourney = ..." />
+                <marker date="1547008090514" expanded="true" signature="2365:2558" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="2368:2552" ph="//    let stops = car.Stops.UpQueue |&gt; List.filter (fun i -&gt; i &lt; targetFloor) ..." />
+                <marker date="1547008090514" expanded="true" signature="2603:2740" ph="////    match car.Stops.UpQueue with ..." />
+                <marker date="1547008090514" expanded="true" signature="2741:3010" ph="//    false ..." />
+                <marker date="1547008090514" expanded="true" signature="3088:5266" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="3118:3374" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="3156:3374" ph="  ..." />
+                <marker date="1547008090514" expanded="true" signature="3407:5266" ph=" ..." />
+                <marker date="1547008090514" expanded="true" signature="3446:5266" ph=" -&gt; ..." />
+                <marker date="1547008090514" expanded="true" signature="3509:3611" ph="// duplicate requests or going somewhere we already have a specific ..." />
+                <marker date="1547008090514" expanded="true" signature="5315:5547" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="5403:5497" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="5633:5849" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="5660:5743" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="5693:5743" ph=" then ..." />
+                <marker date="1547008090514" expanded="true" signature="5756:5848" ph=" id = state.id ..." />
+                <marker date="1547008090514" expanded="true" signature="5909:6121" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="5935:6018" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="5968:6018" ph=" then ..." />
+                <marker date="1547008090514" expanded="true" signature="6030:6120" ph=" id = state.id ..." />
+                <marker date="1547008090514" expanded="true" signature="6192:6319" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="6200:6318" ph=" id = state.id ..." />
+                <marker date="1547008090514" expanded="true" signature="6359:6423" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="6481:6593" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="6527:6593" ph=" ..." />
+                <marker date="1547008090514" expanded="true" signature="6619:8099" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="6651:8099" ph=" ..." />
+                <marker date="1547008090514" expanded="true" signature="8157:8278" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="8165:8277" ph=" id = car.id ..." />
+                <marker date="1547008090514" expanded="true" signature="8300:8430" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="8336:8430" ph=" ..." />
+                <marker date="1547008090514" expanded="true" signature="8457:8696" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="8535:8642" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="8568:8642" ph=" then ..." />
+                <marker date="1547008090514" expanded="true" signature="8730:8780" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="8738:8779" ph=" id = state.id ..." />
+                <marker date="1547008090514" expanded="true" signature="8802:8868" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="8886:9415" ph=" = ..." />
+                <marker date="1547008090514" expanded="true" signature="8907:9415" ph=" ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ElevatorThing.Tests/Cars.fs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="314" column="8" selection-start-line="314" selection-start-column="8" selection-end-line="314" selection-end-column="8" />
+              <folding>
+                <marker date="1547008025529" expanded="true" signature="11:15546" ph=" ..." />
+                <marker date="1547008025529" expanded="false" signature="22:96" ph="..." />
+                <marker date="1547008025529" expanded="true" signature="131:301" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="156:301" ph=" ..." />
+                <marker date="1547008025529" expanded="true" signature="325:393" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="458:707" ph=" =  ..." />
+                <marker date="1547008025529" expanded="true" signature="484:707" ph=" ..." />
+                <marker date="1547008025529" expanded="true" signature="512:669" ph=" -&gt;  ..." />
+                <marker date="1547008025529" expanded="true" signature="755:919" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="810:919" ph=" ..." />
+                <marker date="1547008025529" expanded="true" signature="981:1166" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="999:1054" ph=" = createCar 0 ..." />
+                <marker date="1547008025529" expanded="true" signature="1276:1532" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="1294:1349" ph=" = createCar 0 ..." />
+                <marker date="1547008025529" expanded="true" signature="1639:1896" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="1657:1832" ph=" = createCar 0 ..." />
+                <marker date="1547008025529" expanded="true" signature="1974:2514" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="1992:2082" ph=" = createCar 0 ..." />
+                <marker date="1547008025529" expanded="true" signature="2114:2405" ph=" ..." />
+                <marker date="1547008025529" expanded="true" signature="2138:2367" ph=" -&gt;  ..." />
+                <marker date="1547008025529" expanded="true" signature="2582:3039" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="2600:2656" ph=" = createCar 0 ..." />
+                <marker date="1547008025529" expanded="true" signature="2688:2978" ph=" ..." />
+                <marker date="1547008025529" expanded="true" signature="2712:2940" ph=" -&gt;  ..." />
+                <marker date="1547008025529" expanded="true" signature="3101:3360" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="3119:3293" ph=" = createCar 0 ..." />
+                <marker date="1547008025529" expanded="true" signature="3433:3698" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="3451:3631" ph=" = createCar 0 ..." />
+                <marker date="1547008025529" expanded="true" signature="3758:4158" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="3776:4080" ph=" = createCar 0 ..." />
+                <marker date="1547008025529" expanded="true" signature="4224:4622" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="4242:4543" ph=" = createCar 0 ..." />
+                <marker date="1547008025529" expanded="true" signature="4690:4954" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="4708:4886" ph=" = createCar 0 ..." />
+                <marker date="1547008025529" expanded="true" signature="5027:5820" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="5045:5135" ph=" = createCar 0 ..." />
+                <marker date="1547008025529" expanded="true" signature="5159:5450" ph=" ..." />
+                <marker date="1547008025529" expanded="true" signature="5183:5412" ph=" -&gt;  ..." />
+                <marker date="1547008025529" expanded="true" signature="5595:5761" ph=" ..." />
+                <marker date="1547008025529" expanded="true" signature="5626:5723" ph=" -&gt;  ..." />
+                <marker date="1547008025529" expanded="true" signature="5897:6281" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="5915:5970" ph=" = createCar 0 ..." />
+                <marker date="1547008025529" expanded="true" signature="5994:6109" ph=" ..." />
+                <marker date="1547008025529" expanded="true" signature="6389:6864" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="6407:6462" ph=" = createCar 0 ..." />
+                <marker date="1547008025529" expanded="true" signature="6486:6601" ph=" ..." />
+                <marker date="1547008025529" expanded="true" signature="6927:7798" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="6945:7003" ph=" = createCar 0 ..." />
+                <marker date="1547008025529" expanded="true" signature="7119:7241" ph=" ..." />
+                <marker date="1547008025529" expanded="true" signature="7303:7413" ph=" ..." />
+                <marker date="1547008025529" expanded="true" signature="7527:7637" ph=" ..." />
+                <marker date="1547008025529" expanded="true" signature="7700:7798" ph=" ..." />
+                <marker date="1547008025529" expanded="true" signature="7839:7962" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="8028:9629" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="8046:8190" ph=" = createCar 0 ..." />
+                <marker date="1547008025529" expanded="true" signature="8594:8869" ph=" ..." />
+                <marker date="1547008025529" expanded="true" signature="8631:8831" ph=" -&gt; ..." />
+                <marker date="1547008025529" expanded="true" signature="8940:9136" ph=" ..." />
+                <marker date="1547008025529" expanded="true" signature="8977:9098" ph=" -&gt; ..." />
+                <marker date="1547008025529" expanded="true" signature="9533:9629" ph=" ..." />
+                <marker date="1547008025529" expanded="true" signature="9696:9904" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="9714:9798" ph=" = createCar 0 ..." />
+                <marker date="1547008025529" expanded="true" signature="10019:10183" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="10037:10122" ph=" = createCar 0 ..." />
+                <marker date="1547008025529" expanded="true" signature="10237:10497" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="10255:10383" ph=" = createCar 0 ..." />
+                <marker date="1547008025529" expanded="true" signature="10578:10878" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="10596:10760" ph=" = createCar 0 ..." />
+                <marker date="1547008025529" expanded="true" signature="10964:11208" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="11292:11541" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="11608:11849" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="11919:12360" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="12428:12888" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="12997:13463" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="13582:13809" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="13906:14331" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="14417:14665" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="14753:14974" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="15021:15239" ph=" = ..." />
+                <marker date="1547008025529" expanded="true" signature="15331:15546" ph=" = ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ElevatorLib.Simulation/Program.fs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+              <folding>
+                <marker date="1547008645720" expanded="true" signature="0:1617" ph="open System ..." />
+                <marker date="1547008645720" expanded="true" signature="114:1617" ph=" = ..." />
+                <marker date="1547008645720" expanded="true" signature="479:571" ph=" = { ..." />
+                <marker date="1547008645720" expanded="true" signature="600:680" ph=" = ..." />
+                <marker date="1547008645720" expanded="true" signature="682:798" ph="//    states ..." />
+                <marker date="1547008645720" expanded="true" signature="930:1002" ph="// everyone should have transited ..." />
+                <marker date="1547008645720" expanded="true" signature="1118:1141" ph=" = ..." />
+                <marker date="1547008645720" expanded="true" signature="1147:1319" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ElevatorLib/Simulator.fs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="589">
+              <caret line="93" column="45" lean-forward="true" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="45" />
+              <folding>
+                <marker date="1547008404567" expanded="true" signature="28:3588" ph=" ..." />
+                <marker date="1547008404567" expanded="false" signature="34:108" ph="..." />
+                <marker date="1547008404567" expanded="true" signature="129:205" ph="= { ..." />
+                <marker date="1547008404567" expanded="true" signature="225:267" ph="= { ..." />
+                <marker date="1547008404567" expanded="true" signature="287:313" ph="= { ..." />
+                <marker date="1547008404567" expanded="true" signature="327:469" ph="= ..." />
+                <marker date="1547008404567" expanded="true" signature="333:469" ph="| Standing of StandingState ..." />
+                <marker date="1547008404567" expanded="true" signature="486:528" ph="= { ..." />
+                <marker date="1547008404567" expanded="true" signature="551:631" ph="= { ..." />
+                <marker date="1547008404567" expanded="true" signature="652:696" ph=" = ..." />
+                <marker date="1547008404567" expanded="true" signature="660:695" ph=" capacity = 10 ..." />
+                <marker date="1547008404567" expanded="true" signature="750:1340" ph=" = ..." />
+                <marker date="1547008404567" expanded="true" signature="780:1280" ph=" = ..." />
+                <marker date="1547008404567" expanded="true" signature="812:1280" ph=" ..." />
+                <marker date="1547008404567" expanded="true" signature="859:1262" ph=" -&gt; ..." />
+                <marker date="1547008404567" expanded="true" signature="1064:1228" ph=" = Standing({ ..." />
+                <marker date="1547008404567" expanded="true" signature="1396:3588" ph=" = ..." />
+                <marker date="1547008404567" expanded="true" signature="1422:1718" ph=" = ..." />
+                <marker date="1547008404567" expanded="true" signature="1448:1718" ph=" ..." />
+                <marker date="1547008404567" expanded="true" signature="1764:2294" ph=" = ..." />
+                <marker date="1547008404567" expanded="true" signature="1840:2181" ph=" = ..." />
+                <marker date="1547008404567" expanded="true" signature="1888:2181" ph=" ..." />
+                <marker date="1547008404567" expanded="true" signature="2336:2879" ph=" = ..." />
+                <marker date="1547008404567" expanded="true" signature="2412:2766" ph=" = ..." />
+                <marker date="1547008404567" expanded="true" signature="2460:2766" ph=" ..." />
+                <marker date="1547008404567" expanded="true" signature="2949:3047" ph=" = ..." />
+                <marker date="1547008404567" expanded="true" signature="3364:3472" ph=" = ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ElevatorLib/Banks.fs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+              <folding>
+                <marker date="1547008886378" expanded="true" signature="24:836" ph=" ..." />
+                <marker date="1547008886378" expanded="false" signature="30:69" ph="..." />
+                <marker date="1547008886378" expanded="true" signature="89:121" ph=" = ..." />
+                <marker date="1547008886378" expanded="true" signature="148:179" ph=" = ..." />
+                <marker date="1547008886378" expanded="true" signature="231:421" ph=" = ..." />
+                <marker date="1547008886378" expanded="true" signature="296:421" ph=" ..." />
+                <marker date="1547008886378" expanded="true" signature="454:485" ph=" = ..." />
+                <marker date="1547008886378" expanded="true" signature="533:741" ph=" = ..." />
+                <marker date="1547008886378" expanded="true" signature="558:741" ph=" ..." />
+                <marker date="1547008886378" expanded="true" signature="587:741" ph=" -&gt; ..." />
+                <marker date="1547008886378" expanded="true" signature="768:836" ph=" = ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>dispatch</find>
+      <find>state</find>
+      <find>print</find>
+      <find>floors</find>
+      <find>waitnig</find>
+      <find>people</find>
+      <find>StandingState</find>
+      <find>what</find>
+      <find>occupan</find>
+      <find>floor</find>
+      <find>createCall</find>
+      <find>bank</find>
+      <find>time</find>
+      <find>go</find>
+      <find>(send</find>
+      <find>shouldBeWaitingAt</find>
+      <find>waitng</find>
+      <find>adddes</find>
+      <find>queuemo</find>
+      <find>movingstate</find>
+      <find>addDestination</find>
+      <find>adddest</find>
+      <find>adddestin</find>
+      <find>upgrade</find>
+      <find>getMovingDirection</find>
+      <find>movingdi</find>
+      <find>doDestinationThing</find>
+      <find>send</find>
+      <find>waiting</find>
+      <find>send (send</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>enqueueDestination</replace>
+    </replaceStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ElevatorLib/Banks.fs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ElevatorLib/Cars.fs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5B5A6DC5-904C-F4DA-A745-0383C56D5A5B/75/cf2b8b92/FSharpFunc`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ElevatorLib/Types.fs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5B5A6DC5-904C-F4DA-A745-0383C56D5A5B/3b/566eee56/ListModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ElevatorLib.Simulation/Program.fs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ElevatorLib/Simulator.fs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.fsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/341DFE22-562E-4DB3-8729-B233A8CD1A5F/98/7ab00d8a/Tuple`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5BE68338-BA1E-1461-A745-03833883E65B/b8/26e0e02e/Xunit.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ElevatorThing.Tests/Banks.fs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ElevatorThing.Tests/Cars.fs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ElevatorThing.Tests/Program.fs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ElevatorLib/ElevatorLib.fsproj" />
+        <option value="$PROJECT_DIR$/ElevatorThing.Tests/ElevatorThing.Tests.fsproj" />
+        <option value="$PROJECT_DIR$/ElevatorLib/Library.fs" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.fsx" />
+        <option value="$PROJECT_DIR$/ElevatorThing.Tests/Tests.fs" />
+        <option value="$PROJECT_DIR$/ElevatorThing.Tests/Banks.fs" />
+        <option value="$PROJECT_DIR$/ElevatorLib/Types.fs" />
+        <option value="$PROJECT_DIR$/ElevatorThing.Tests/Cars.fs" />
+        <option value="$PROJECT_DIR$/ElevatorLib/Cars.fs" />
+        <option value="$PROJECT_DIR$/ElevatorLib/Simulator.fs" />
+        <option value="$PROJECT_DIR$/ElevatorLib.Simulation/Program.fs" />
+        <option value="$PROJECT_DIR$/ElevatorLib/Banks.fs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="1294" />
+    <option name="height" value="1407" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ElevatorThing" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ElevatorThing" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ElevatorLib" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ElevatorThing" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ElevatorLib.Simulation" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ElevatorThing" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ElevatorLib.Simulation" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ElevatorThing" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ElevatorLib.Simulation" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
+              <item name=".NETCoreApp 2.1" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="F# Script" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="RiderDotCoverContinuousTestingPageId" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/ElevatorLib.Simulation/bin/Debug/netcoreapp2.1/ElevatorLib.Simulation.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ElevatorLib.Simulation" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5000" />
+      </envs>
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ElevatorLib.Simulation/ElevatorLib.Simulation.fsproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
+      <browser url="http://localhost:5000" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c7514df-03ca-4649-90c7-9920be90502c" name="Default Changelist" comment="" />
+      <created>1545874219912</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545874219912</updated>
+      <workItem from="1545874222489" duration="553000" />
+      <workItem from="1545874823060" duration="4015000" />
+      <workItem from="1545885862584" duration="4539000" />
+      <workItem from="1545926573322" duration="6433000" />
+      <workItem from="1545935047758" duration="235000" />
+      <workItem from="1545960276544" duration="228000" />
+      <workItem from="1546115225239" duration="5214000" />
+      <workItem from="1546130944504" duration="4923000" />
+      <workItem from="1546214062463" duration="1005000" />
+      <workItem from="1546219144775" duration="1738000" />
+      <workItem from="1546222909597" duration="973000" />
+      <workItem from="1546232223500" duration="2764000" />
+      <workItem from="1546279946299" duration="3964000" />
+      <workItem from="1546351632525" duration="3391000" />
+      <workItem from="1546372030224" duration="1194000" />
+      <workItem from="1546392070554" duration="407000" />
+      <workItem from="1546471751315" duration="599000" />
+      <workItem from="1546477037954" duration="6516000" />
+      <workItem from="1546486199638" duration="645000" />
+      <workItem from="1546486864609" duration="3745000" />
+      <workItem from="1546564274597" duration="6331000" />
+      <workItem from="1546573392346" duration="659000" />
+      <workItem from="1546574073182" duration="1992000" />
+      <workItem from="1546652882975" duration="4240000" />
+      <workItem from="1546659414087" duration="5296000" />
+      <workItem from="1546701545640" duration="7266000" />
+      <workItem from="1546749122008" duration="2232000" />
+      <workItem from="1546825953763" duration="9937000" />
+      <workItem from="1546878428201" duration="9454000" />
+      <workItem from="1547001817194" duration="7079000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="107567000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4756703" visible="true" weight="0.091017485" />
+      <window_info id="Structure" order="1" sideWeight="0.5243297" side_tool="true" visible="true" weight="0.091017485" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289166" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.25331256" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32969603" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.3298731" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3298731" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Build" order="14" visible="true" weight="0.2151208" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="6" weight="0.32915798" />
+      <window_info anchor="right" id="Unit Tests" order="7" sideWeight="0.49921507" visible="true" weight="0.22734499" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ElevatorLib/ElevatorLib.fsproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ElevatorThing.Tests/ElevatorThing.Tests.fsproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5B5A6DC5-904C-F4DA-A745-0383C56D5A5B/75/cf2b8b92/FSharpFunc`2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5B5A6DC5-904C-F4DA-A745-0383C56D5A5B/3b/566eee56/ListModule.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="1850" column="6" selection-start-line="1850" selection-start-column="6" selection-end-line="1850" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.fsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5BE68338-BA1E-1461-A745-03833883E65B/b8/26e0e02e/Xunit.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="47" column="9" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ElevatorLib/Library.fs" />
+    <entry file="file://$PROJECT_DIR$/ElevatorThing.Tests/Banks.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <marker date="1546738131599" expanded="true" signature="12:1510" ph=" ..." />
+            <marker date="1546738131599" expanded="false" signature="23:124" ph="..." />
+            <marker date="1546738131599" expanded="true" signature="159:329" ph=" = ..." />
+            <marker date="1546738131599" expanded="true" signature="184:329" ph=" ..." />
+            <marker date="1546738131599" expanded="true" signature="353:421" ph=" = ..." />
+            <marker date="1546738131599" expanded="true" signature="471:543" ph=" = ..." />
+            <marker date="1546738131599" expanded="true" signature="612:990" ph=" = ..." />
+            <marker date="1546738131599" expanded="true" signature="1046:1510" ph=" = ..." />
+            <marker date="1546738131599" expanded="true" signature="1517:1975" ph="////    [&lt;Fact&gt;] ..." />
+            <marker date="1546738131599" expanded="true" signature="1979:3232" ph="////    [&lt;Fact&gt;] ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ElevatorThing.Tests/Program.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1545885993552" expanded="true" signature="0:47" ph="module Program = let [&lt;EntryPoint&gt;] main _ = 0 ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ElevatorLib/Types.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding>
+            <marker date="1546749900421" expanded="true" signature="24:870" ph=" ..." />
+            <marker date="1546749900421" expanded="true" signature="63:84" ph="= ..." />
+            <marker date="1546749900421" expanded="true" signature="69:84" ph="| Up ..." />
+            <marker date="1546749900421" expanded="true" signature="97:122" ph="= ..." />
+            <marker date="1546749900421" expanded="true" signature="103:122" ph="| Open ..." />
+            <marker date="1546749900421" expanded="true" signature="142:174" ph="= { ..." />
+            <marker date="1546749900421" expanded="true" signature="194:286" ph="= { ..." />
+            <marker date="1546749900421" expanded="true" signature="305:385" ph="= { ..." />
+            <marker date="1546749900421" expanded="true" signature="396:506" ph="= ..." />
+            <marker date="1546749900421" expanded="true" signature="402:506" ph="| Idleing of IdleingState ..." />
+            <marker date="1546749900421" expanded="true" signature="524:646" ph=" = ..." />
+            <marker date="1546749900421" expanded="true" signature="545:646" ph=" ..." />
+            <marker date="1546749900421" expanded="true" signature="662:713" ph="= ..." />
+            <marker date="1546749900421" expanded="true" signature="668:713" ph="| Call of (Direction * int) ..." />
+            <marker date="1546749900421" expanded="true" signature="732:781" ph=" = ..." />
+            <marker date="1546749900421" expanded="true" signature="748:779" ph=" ..." />
+            <marker date="1546749900421" expanded="true" signature="805:870" ph=" = ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/341DFE22-562E-4DB3-8729-B233A8CD1A5F/98/7ab00d8a/Tuple`2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ElevatorLib/Cars.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="224" column="59" selection-start-line="224" selection-start-column="59" selection-end-line="224" selection-end-column="59" />
+          <folding>
+            <marker date="1547008090514" expanded="true" signature="23:9415" ph=" ..." />
+            <marker date="1547008090514" expanded="true" signature="71:208" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="92:208" ph=" ..." />
+            <marker date="1547008090514" expanded="true" signature="237:510" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="260:447" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="285:447" ph=" ..." />
+            <marker date="1547008090514" expanded="true" signature="528:659" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="549:659" ph=" ..." />
+            <marker date="1547008090514" expanded="true" signature="676:743" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="697:743" ph=" ..." />
+            <marker date="1547008090514" expanded="true" signature="770:883" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="806:883" ph=" ..." />
+            <marker date="1547008090514" expanded="true" signature="913:1008" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="971:1008" ph=" ..." />
+            <marker date="1547008090514" expanded="true" signature="1039:1084" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="1112:1160" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="1184:1248" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="1203:1248" ph=" then ..." />
+            <marker date="1547008090514" expanded="true" signature="1264:1327" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="1285:1327" ph=" ..." />
+            <marker date="1547008090514" expanded="true" signature="1329:1433" ph="//let totalQueueLength queue = ..." />
+            <marker date="1547008090514" expanded="true" signature="1493:2308" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="1496:2302" ph="//    let timeToCompleteCurrentJourney = ..." />
+            <marker date="1547008090514" expanded="true" signature="2365:2558" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="2368:2552" ph="//    let stops = car.Stops.UpQueue |&gt; List.filter (fun i -&gt; i &lt; targetFloor) ..." />
+            <marker date="1547008090514" expanded="true" signature="2603:2740" ph="////    match car.Stops.UpQueue with ..." />
+            <marker date="1547008090514" expanded="true" signature="2741:3010" ph="//    false ..." />
+            <marker date="1547008090514" expanded="true" signature="3088:5266" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="3118:3374" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="3156:3374" ph="  ..." />
+            <marker date="1547008090514" expanded="true" signature="3407:5266" ph=" ..." />
+            <marker date="1547008090514" expanded="true" signature="3446:5266" ph=" -&gt; ..." />
+            <marker date="1547008090514" expanded="true" signature="3509:3611" ph="// duplicate requests or going somewhere we already have a specific ..." />
+            <marker date="1547008090514" expanded="true" signature="5315:5547" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="5403:5497" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="5633:5849" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="5660:5743" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="5693:5743" ph=" then ..." />
+            <marker date="1547008090514" expanded="true" signature="5756:5848" ph=" id = state.id ..." />
+            <marker date="1547008090514" expanded="true" signature="5909:6121" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="5935:6018" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="5968:6018" ph=" then ..." />
+            <marker date="1547008090514" expanded="true" signature="6030:6120" ph=" id = state.id ..." />
+            <marker date="1547008090514" expanded="true" signature="6192:6319" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="6200:6318" ph=" id = state.id ..." />
+            <marker date="1547008090514" expanded="true" signature="6359:6423" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="6481:6593" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="6527:6593" ph=" ..." />
+            <marker date="1547008090514" expanded="true" signature="6619:8099" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="6651:8099" ph=" ..." />
+            <marker date="1547008090514" expanded="true" signature="8157:8278" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="8165:8277" ph=" id = car.id ..." />
+            <marker date="1547008090514" expanded="true" signature="8300:8430" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="8336:8430" ph=" ..." />
+            <marker date="1547008090514" expanded="true" signature="8457:8696" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="8535:8642" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="8568:8642" ph=" then ..." />
+            <marker date="1547008090514" expanded="true" signature="8730:8780" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="8738:8779" ph=" id = state.id ..." />
+            <marker date="1547008090514" expanded="true" signature="8802:8868" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="8886:9415" ph=" = ..." />
+            <marker date="1547008090514" expanded="true" signature="8907:9415" ph=" ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ElevatorThing.Tests/Cars.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="314" column="8" selection-start-line="314" selection-start-column="8" selection-end-line="314" selection-end-column="8" />
+          <folding>
+            <marker date="1547008025529" expanded="true" signature="11:15546" ph=" ..." />
+            <marker date="1547008025529" expanded="false" signature="22:96" ph="..." />
+            <marker date="1547008025529" expanded="true" signature="131:301" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="156:301" ph=" ..." />
+            <marker date="1547008025529" expanded="true" signature="325:393" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="458:707" ph=" =  ..." />
+            <marker date="1547008025529" expanded="true" signature="484:707" ph=" ..." />
+            <marker date="1547008025529" expanded="true" signature="512:669" ph=" -&gt;  ..." />
+            <marker date="1547008025529" expanded="true" signature="755:919" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="810:919" ph=" ..." />
+            <marker date="1547008025529" expanded="true" signature="981:1166" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="999:1054" ph=" = createCar 0 ..." />
+            <marker date="1547008025529" expanded="true" signature="1276:1532" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="1294:1349" ph=" = createCar 0 ..." />
+            <marker date="1547008025529" expanded="true" signature="1639:1896" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="1657:1832" ph=" = createCar 0 ..." />
+            <marker date="1547008025529" expanded="true" signature="1974:2514" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="1992:2082" ph=" = createCar 0 ..." />
+            <marker date="1547008025529" expanded="true" signature="2114:2405" ph=" ..." />
+            <marker date="1547008025529" expanded="true" signature="2138:2367" ph=" -&gt;  ..." />
+            <marker date="1547008025529" expanded="true" signature="2582:3039" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="2600:2656" ph=" = createCar 0 ..." />
+            <marker date="1547008025529" expanded="true" signature="2688:2978" ph=" ..." />
+            <marker date="1547008025529" expanded="true" signature="2712:2940" ph=" -&gt;  ..." />
+            <marker date="1547008025529" expanded="true" signature="3101:3360" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="3119:3293" ph=" = createCar 0 ..." />
+            <marker date="1547008025529" expanded="true" signature="3433:3698" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="3451:3631" ph=" = createCar 0 ..." />
+            <marker date="1547008025529" expanded="true" signature="3758:4158" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="3776:4080" ph=" = createCar 0 ..." />
+            <marker date="1547008025529" expanded="true" signature="4224:4622" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="4242:4543" ph=" = createCar 0 ..." />
+            <marker date="1547008025529" expanded="true" signature="4690:4954" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="4708:4886" ph=" = createCar 0 ..." />
+            <marker date="1547008025529" expanded="true" signature="5027:5820" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="5045:5135" ph=" = createCar 0 ..." />
+            <marker date="1547008025529" expanded="true" signature="5159:5450" ph=" ..." />
+            <marker date="1547008025529" expanded="true" signature="5183:5412" ph=" -&gt;  ..." />
+            <marker date="1547008025529" expanded="true" signature="5595:5761" ph=" ..." />
+            <marker date="1547008025529" expanded="true" signature="5626:5723" ph=" -&gt;  ..." />
+            <marker date="1547008025529" expanded="true" signature="5897:6281" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="5915:5970" ph=" = createCar 0 ..." />
+            <marker date="1547008025529" expanded="true" signature="5994:6109" ph=" ..." />
+            <marker date="1547008025529" expanded="true" signature="6389:6864" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="6407:6462" ph=" = createCar 0 ..." />
+            <marker date="1547008025529" expanded="true" signature="6486:6601" ph=" ..." />
+            <marker date="1547008025529" expanded="true" signature="6927:7798" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="6945:7003" ph=" = createCar 0 ..." />
+            <marker date="1547008025529" expanded="true" signature="7119:7241" ph=" ..." />
+            <marker date="1547008025529" expanded="true" signature="7303:7413" ph=" ..." />
+            <marker date="1547008025529" expanded="true" signature="7527:7637" ph=" ..." />
+            <marker date="1547008025529" expanded="true" signature="7700:7798" ph=" ..." />
+            <marker date="1547008025529" expanded="true" signature="7839:7962" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="8028:9629" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="8046:8190" ph=" = createCar 0 ..." />
+            <marker date="1547008025529" expanded="true" signature="8594:8869" ph=" ..." />
+            <marker date="1547008025529" expanded="true" signature="8631:8831" ph=" -&gt; ..." />
+            <marker date="1547008025529" expanded="true" signature="8940:9136" ph=" ..." />
+            <marker date="1547008025529" expanded="true" signature="8977:9098" ph=" -&gt; ..." />
+            <marker date="1547008025529" expanded="true" signature="9533:9629" ph=" ..." />
+            <marker date="1547008025529" expanded="true" signature="9696:9904" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="9714:9798" ph=" = createCar 0 ..." />
+            <marker date="1547008025529" expanded="true" signature="10019:10183" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="10037:10122" ph=" = createCar 0 ..." />
+            <marker date="1547008025529" expanded="true" signature="10237:10497" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="10255:10383" ph=" = createCar 0 ..." />
+            <marker date="1547008025529" expanded="true" signature="10578:10878" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="10596:10760" ph=" = createCar 0 ..." />
+            <marker date="1547008025529" expanded="true" signature="10964:11208" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="11292:11541" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="11608:11849" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="11919:12360" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="12428:12888" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="12997:13463" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="13582:13809" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="13906:14331" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="14417:14665" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="14753:14974" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="15021:15239" ph=" = ..." />
+            <marker date="1547008025529" expanded="true" signature="15331:15546" ph=" = ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ElevatorLib.Simulation/Program.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+          <folding>
+            <marker date="1547008645720" expanded="true" signature="0:1617" ph="open System ..." />
+            <marker date="1547008645720" expanded="true" signature="114:1617" ph=" = ..." />
+            <marker date="1547008645720" expanded="true" signature="479:571" ph=" = { ..." />
+            <marker date="1547008645720" expanded="true" signature="600:680" ph=" = ..." />
+            <marker date="1547008645720" expanded="true" signature="682:798" ph="//    states ..." />
+            <marker date="1547008645720" expanded="true" signature="930:1002" ph="// everyone should have transited ..." />
+            <marker date="1547008645720" expanded="true" signature="1118:1141" ph=" = ..." />
+            <marker date="1547008645720" expanded="true" signature="1147:1319" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ElevatorLib/Banks.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding>
+            <marker date="1547008886378" expanded="true" signature="24:836" ph=" ..." />
+            <marker date="1547008886378" expanded="false" signature="30:69" ph="..." />
+            <marker date="1547008886378" expanded="true" signature="89:121" ph=" = ..." />
+            <marker date="1547008886378" expanded="true" signature="148:179" ph=" = ..." />
+            <marker date="1547008886378" expanded="true" signature="231:421" ph=" = ..." />
+            <marker date="1547008886378" expanded="true" signature="296:421" ph=" ..." />
+            <marker date="1547008886378" expanded="true" signature="454:485" ph=" = ..." />
+            <marker date="1547008886378" expanded="true" signature="533:741" ph=" = ..." />
+            <marker date="1547008886378" expanded="true" signature="558:741" ph=" ..." />
+            <marker date="1547008886378" expanded="true" signature="587:741" ph=" -&gt; ..." />
+            <marker date="1547008886378" expanded="true" signature="768:836" ph=" = ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ElevatorLib/Simulator.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="93" column="45" lean-forward="true" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="45" />
+          <folding>
+            <marker date="1547008404567" expanded="true" signature="28:3588" ph=" ..." />
+            <marker date="1547008404567" expanded="false" signature="34:108" ph="..." />
+            <marker date="1547008404567" expanded="true" signature="129:205" ph="= { ..." />
+            <marker date="1547008404567" expanded="true" signature="225:267" ph="= { ..." />
+            <marker date="1547008404567" expanded="true" signature="287:313" ph="= { ..." />
+            <marker date="1547008404567" expanded="true" signature="327:469" ph="= ..." />
+            <marker date="1547008404567" expanded="true" signature="333:469" ph="| Standing of StandingState ..." />
+            <marker date="1547008404567" expanded="true" signature="486:528" ph="= { ..." />
+            <marker date="1547008404567" expanded="true" signature="551:631" ph="= { ..." />
+            <marker date="1547008404567" expanded="true" signature="652:696" ph=" = ..." />
+            <marker date="1547008404567" expanded="true" signature="660:695" ph=" capacity = 10 ..." />
+            <marker date="1547008404567" expanded="true" signature="750:1340" ph=" = ..." />
+            <marker date="1547008404567" expanded="true" signature="780:1280" ph=" = ..." />
+            <marker date="1547008404567" expanded="true" signature="812:1280" ph=" ..." />
+            <marker date="1547008404567" expanded="true" signature="859:1262" ph=" -&gt; ..." />
+            <marker date="1547008404567" expanded="true" signature="1064:1228" ph=" = Standing({ ..." />
+            <marker date="1547008404567" expanded="true" signature="1396:3588" ph=" = ..." />
+            <marker date="1547008404567" expanded="true" signature="1422:1718" ph=" = ..." />
+            <marker date="1547008404567" expanded="true" signature="1448:1718" ph=" ..." />
+            <marker date="1547008404567" expanded="true" signature="1764:2294" ph=" = ..." />
+            <marker date="1547008404567" expanded="true" signature="1840:2181" ph=" = ..." />
+            <marker date="1547008404567" expanded="true" signature="1888:2181" ph=" ..." />
+            <marker date="1547008404567" expanded="true" signature="2336:2879" ph=" = ..." />
+            <marker date="1547008404567" expanded="true" signature="2412:2766" ph=" = ..." />
+            <marker date="1547008404567" expanded="true" signature="2460:2766" ph=" ..." />
+            <marker date="1547008404567" expanded="true" signature="2949:3047" ph=" = ..." />
+            <marker date="1547008404567" expanded="true" signature="3364:3472" ph=" = ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
