@@ -16,9 +16,10 @@ let main argv =
     let bank = createBank numElevators
     let occupancies = List.init numElevators (fun _ -> createOccupancy)
     
+    let occupiedCars = List.zip occupancies bank
+    
     let initialState = {
-        bank = bank
-        occupancies = occupancies
+        occupiedCars = occupiedCars 
         people = List.empty
     }
     
@@ -31,10 +32,12 @@ let main argv =
 //    |> List.map (fun state -> printf "%O\n" (state |> getFloors))
 //    |> ignore
 
-    printf "%O\n" (final.bank |> getFloors)
+    let (occupanies, bank) = final.occupiedCars |> List.unzip
+    
+    printf "%O\n" (bank |> getFloors)
 
     // we should have none of these    
-    printf "%O\n" final.occupancies
+    printf "%O\n" occupancies
     
     // everyone should have transited
 //    printf "%O\n" final.floors
