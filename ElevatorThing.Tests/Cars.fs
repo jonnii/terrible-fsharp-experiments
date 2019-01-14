@@ -448,7 +448,7 @@ module Cars
         |> should equal [(Some(Down), 10); (Some(Down), 1)]
     
     [<Fact>]
-    let ``magical thing`` () =
+    let ``adding an up destination when already going up`` () =
         let journey = (Up, 5)
         
         []
@@ -464,3 +464,48 @@ module Cars
         |> enqueueDestination journey (Some(Up), 5)
         |> enqueueDestination journey (Some(Up), 25)
         |> should equal [(Some(Up), 25) ; (Some(Up), 5)]
+
+    [<Fact>]
+    let ``calculating time on current journey`` () =
+        let car = createCar 0
+                  |> moveToFloor 10
+                  |> send (Call (Up, 10))
+                  |> send (Send 20)
+                  
+        timeToFloor (Some Up) 15 car |> should equal 10
+        
+    [<Fact>]
+    let ``calculating time to get to destination when idle`` () =
+        let car = createCar 0
+        car |> timeToFloor (Some Up) 3 |> should equal 3
+        car |> moveToFloor 10 |> timeToFloor (Some Up) 3 |> should equal 7
+    
+    [<Fact>]
+    let ``calculating time to get to destination when waiting`` () =
+        let car = Waiting({id = 1 ; remainingTime = 30<sec> ; floor = 0; direction = None}, None)
+        car |> timeToFloor (Some Up) 10 |> should equal 40
+    
+    [<Fact>]
+    let ``calculating time after current journey`` () =
+        let car = Moving({id = 1 ; floor = 10 ; destinations = [(Some Up, 25)]})
+        timeToFloor (Some Up) 20 car |> should equal 10
+    
+    [<Fact>]
+    let ``calculating time on current journey to existing destination should not factor in wait time`` () =
+        let car = Moving({id = 1 ; floor = 10 ; destinations = [(Some Up, 25)]})
+        timeToFloor (Some Up) 25 car |> should equal 0
+        
+    [<Fact>]
+    let ``calculating time on current journey to existing destination with downward queue already established`` () =
+        let car = Moving({id = 1 ; floor = 10 ; destinations = [(Some Up, 25) ; (Some Down, 30)]})
+        timeToFloor (Some Up) 26 car |> should equal 21
+        
+    [<Fact>]
+    let ``calculating time on current journey multiple steps`` () =
+        let car = createCar 0
+                  |> moveToFloor 10
+                  |> send (Call (Up, 15))
+                  |> send (Call (Up, 10))
+                  |> send (Call (Up, 25))
+                  
+        timeToFloor (Some Up) 20 car |> should equal 15

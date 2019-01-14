@@ -20,46 +20,38 @@ let main argv =
     
     let initialState = {
         occupiedCars = occupiedCars 
-        people = List.empty
+        standing = List.empty
+        transiting = List.empty
+        arrived = List.empty
     }
     
     let (states, final) =
         Seq.zip timeSeries rides
-        |> Seq.mapFold simulate initialState
-
-//    states
-//    |> Seq.toList
-//    |> List.map (fun state -> printf "%O\n" (state |> getFloors))
-//    |> ignore
-
-    let (occupanies, bank) = final.occupiedCars |> List.unzip
+        |> Seq.mapFold (simulate findFirstIdleCareOrWithFewestDestinations) initialState
     
-    printf "%O\n" (bank |> getFloors)
+    let calculateTravelTime (waited, traveled, arrived) =
+        float(arrived.arrivalTime - waited.startingTime)
 
-    // we should have none of these    
-    printf "%O\n" occupancies
+    let avg = final.arrived |> List.map calculateTravelTime |> List.average
+
+    printf "idle or fewest destinations %O rides completed in %f seconds\n" final.arrived.Length avg
+
+    let (states, final) =
+        Seq.zip timeSeries rides
+        |> Seq.mapFold (simulate findClosestCarByJourneyTime) initialState
     
-    // everyone should have transited
-//    printf "%O\n" final.floors
-//
-//        
-    printf "Scheduled Rides\n"
-    let scheduledRides = rides |> List.collect id
+    let calculateTravelTime (waited, traveled, arrived) =
+        float(arrived.arrivalTime - waited.startingTime)
+
+    let avg = final.arrived |> List.map calculateTravelTime |> List.average
+
+    printf "closest car by journey time %O rides completed in %f seconds\n" final.arrived.Length avg
     
-    let finishedRides =
-        final.people
-    
-    let calculateTravelTime person =
-        match person with 
-        | Arrived(waited, traveled, arrived) -> 
-            float(arrived.arrivalTime - waited.startingTime)
-        | _ -> failwith "not supported"
+    let timeByCar =
+        final.arrived
+        |> List.groupBy (fun (_, t, _) -> t.carId)
+        |> List.map (fun (_, list) -> list |> List.map calculateTravelTime |> List.average)
 
-    let avg = final.people |> List.map calculateTravelTime |> List.average
+    printf "%O\n" timeByCar
 
-    printf "%O of %O rides completed in %f seconds\n" finishedRides.Length scheduledRides.Length avg
-
-    for person in final.people do
-        printf "%O\n" person
-        
     0

@@ -55,53 +55,6 @@ let isIdle car =
     | Idleing(_) -> true
     | _ -> false
 
-//let totalQueueLength queue =
-//    0
-//    //    car.Stops.DownQueue.Length + car.Stops.UpQueue.Length
-
-let calculateTravelTimeNotOnCurrentJourney targetFloor car =
-//    let timeToCompleteCurrentJourney =
-//        let pendingWaits = (totalQueueLength car) * (getFloorWait 1)
-//        let pendingTravels =
-//            match car.Stops.UpQueue with
-//            | [] -> 0
-//            | [one] -> 0 // we are moving
-//            | head :: tail -> abs(head - (tail |> List.last))
-//        
-//        let pendingTime = pendingWaits + pendingTravels
-//        
-//        match car.State with
-//        | Idle -> pendingTime
-//        | Waiting(_, time) -> time
-//        | Moving(state) -> pendingTime + abs(car.Floor - state.DesiredFloor)
-//
-//    let timeToGetToTargetFloorFromLastStop =
-//        abs(car.Stops.UpQueue |> List.tryLast |> Option.defaultValue(car.Floor - targetFloor))
-//        
-//    timeToGetToTargetFloorFromLastStop + timeToCompleteCurrentJourney
-    0
-
-let calculateTravelTimeOnCurrentJourney targetFloor car =
-//    let stops = car.Stops.UpQueue |> List.filter (fun i -> i < targetFloor)
-//    let pendingWaits = stops.Length * (getFloorWait 1)
-//    pendingWaits + abs(targetFloor - car.Floor)
-    0
-
-//let isOnCurrentJourney targetFloor car =
-////    match car.Stops.UpQueue with
-////    | head::tail -> head < targetFloor && targetFloor < (tail |> List.last)
-////    | _ -> false
-//    false
-//
-//let timeToFloor targetFloor car =
-//   let method =
-//       if isOnCurrentJourney targetFloor car then
-//           calculateTravelTimeOnCurrentJourney
-//       else
-//           calculateTravelTimeNotOnCurrentJourney
-//   
-//   method targetFloor car
-
 let rec enqueueDestination (journey: (Direction * int)) request destinations =
     let isOnJourney request =
         match request, journey with 
@@ -147,6 +100,46 @@ let rec enqueueDestination (journey: (Direction * int)) request destinations =
             
         | _ -> head :: enqueueDestination journey request tail
 
+let calculateJourneyTimeTo state (direction, floor) =
+    let calculateDistanceBetween ((_, leftFloor), (_, rightFloor)) =
+        abs(leftFloor - rightFloor)
+    
+    let moving = (state |> getMovingDirection, state.floor)
+    
+    if state.destinations |> List.exists (fun f -> f = (direction, floor)) then 
+        0
+    else
+        let destinations =
+            state.destinations
+            |> enqueueDestination (moving) (direction, floor)
+    
+        let (l, _) =
+            state.destinations
+            |> Seq.zip destinations
+            |> Seq.takeWhile (fun (x, y) -> x = y)
+            |> Seq.toList
+            |> List.unzip
+            
+        match l with
+        | [] -> abs(floor - state.floor)
+        | some -> 
+            let kk = ((Some (state |> getMovingDirection), state.floor)) :: l
+            
+            let travelDistance = kk |> List.pairwise |> List.map calculateDistanceBetween |> List.sum
+            let lflf = travelDistance + ((max 0 ((l |> List.length))) * 5)
+            
+            lflf + abs((kk |> List.last |> snd) - floor)
+
+let timeToFloor direction floor car =
+    match car with
+    | Idleing(state) -> abs(state.floor - floor)
+    | Waiting(state, None) ->
+        int(state.remainingTime) + abs(state.floor - floor)
+    | Waiting(state, Some(next)) ->
+        int(state.remainingTime) + calculateJourneyTimeTo next (direction, floor)
+    | Moving(state) ->
+        calculateJourneyTimeTo state (direction, floor)
+
 let addDestination floor requestDirection state =
     let moving = (state |> getMovingDirection, state.floor)
     
@@ -156,7 +149,7 @@ let addDestination floor requestDirection state =
     
     {state with destinations = destinations}
     
-let startMoving floor (requestDirection: Direction option) (state: IdleingState) =
+let startMoving floor requestDirection (state: IdleingState) =
      let movingDirection =
         if state.floor > floor then
             Down

@@ -19,11 +19,6 @@ type ArrivedState = {
     arrivalTime: int
 }
 
-type Person =
-    | Standing of StandingState
-    | InTransit of StandingState * TransitState
-    | Arrived of StandingState * TransitState * ArrivedState
-
 type Occupancy = {
     capacity: int
     occupancy: int
@@ -31,7 +26,9 @@ type Occupancy = {
 
 type SimulationState = {
     occupiedCars: (Occupancy * Car) list
-    people: Person list
+    standing: StandingState list
+    transiting: (StandingState * TransitState) list
+    arrived: (StandingState * TransitState * ArrivedState) list
 }
 
 let createOccupancy =
@@ -43,17 +40,15 @@ let generateRides numFloors (random: Random) history =
         match second % 5 with
         | _ when second > 240 -> []
         | 0 ->
-            // every 5 seconds place a random person
-            let startingFloor = random.Next(numFloors)
-            let destinationFloor = random.Next(numFloors)
-            
-            let person = Standing({
-                startingFloor = startingFloor
-                startingTime = second
-                destinationFloor = destinationFloor
-            })
-            
-            [person]
+            match random.Next(numFloors), random.Next(numFloors) with
+            | startingFloor, destinationFloor when startingFloor = destinationFloor -> []
+            | startingFloor, destinationFloor -> 
+                let standing = {
+                    startingFloor = startingFloor
+                    startingTime = second
+                    destinationFloor = destinationFloor
+                }
+                [standing]
         | _ -> []
 
     history
@@ -63,44 +58,65 @@ let generateRides numFloors (random: Random) history =
 let shouldTransit standing (waitingState: WaitingState) transit =
     standing.destinationFloor = waitingState.floor && transit.carId = waitingState.id
 
-let processExit second (occupancy, car) person =
-    match person, car, occupancy with
-    | InTransit(standing, transit), Waiting(waitingState, _), _ when shouldTransit standing waitingState transit ->
-        Arrived(standing, transit, { arrivalTime = second }), (occupancy, car)
-    | _ -> person, (occupancy, car)
+let createCall (ride : StandingState) =
+    if ride.startingFloor < ride.destinationFloor then
+        (Call (Up, ride.startingFloor))
+    else
+        (Call (Down, ride.startingFloor))
 
-let processEnter second (occupancy: Occupancy, car: Car) (person: Person) =
-    match person, car, occupancy with
-    | Standing(standing), Waiting(waitingState, _), _ when standing.startingFloor = waitingState.floor ->
-        InTransit(standing, { boardingTime = second ; carId = waitingState.id }), (occupancy, car |> send (Send standing.destinationFloor))
-    | _ -> person, (occupancy, car)
-
-let createCall ride =
-    match ride with
-    | Standing(state) when state.startingFloor < state.destinationFloor ->
-        (Call (Up, state.startingFloor))
-    | Standing(state) ->
-        (Call (Down, state.startingFloor))
-    | _ -> failwith "cannot create a ride in a non waiting state"
-
-let transit func people occupiedCar =
-    let (people, occupiedCar) = people |> List.mapFold (func) occupiedCar
-    (occupiedCar, people)
-
-let simulate (state : SimulationState) (second, rides) =
-    let (occupiedCars, people) = state.occupiedCars |> List.mapFold (transit (processExit second)) state.people
-    let (occupiedCars, people) = occupiedCars |> List.mapFold (transit (processEnter second)) people    
+let doMoveOut time (state: SimulationState) (occupancy, car) =
+    match car with
+    | Waiting(waitingState, _) ->
+        let shouldTransit (standingState, transitState) =
+            transitState.carId = waitingState.id &&
+            standingState.destinationFloor = waitingState.floor 
     
-    let people = rides @ people
+        let (leavers, remainers) = state.transiting |> List.partition shouldTransit
+    
+        let arrivers = leavers|> List.map (fun (standing, transit) -> (standing, transit, { arrivalTime = time } ))
+        
+        let state = { state with arrived = state.arrived @ arrivers ; transiting = remainers }
+        
+        ((occupancy, car), state)
+    | _ -> ((occupancy, car), state)
+
+let moveIn time carId (occupancy: Occupancy, car: Car) (standing: StandingState) = 
+    let nextState = (standing, { carId = carId ; boardingTime = time } )
+    nextState, (occupancy, car |> send (Send standing.destinationFloor))
+
+let shouldMoveIn (waitingState: WaitingState) standingState =
+    standingState.startingFloor = waitingState.floor
+
+let doMoveIn time (state: SimulationState) (occupancy: Occupancy, car: Car) =
+    match car with
+    | Waiting(waitingState, _) ->
+        let (leavers, remainers) = state.standing |> List.partition (shouldMoveIn waitingState)
+    
+        let (arrivers, (occupancy, car)) =
+            leavers
+            |> List.mapFold (moveIn time waitingState.id) (occupancy, car)
+        
+        let state = { state with transiting = state.transiting @ arrivers ; standing = remainers }
+        
+        ((occupancy, car), state)
+    | _ -> ((occupancy, car), state)
+
+let simulate strategy (state : SimulationState) (second, rides) =
+    let occupiedCars = state.occupiedCars
+    
+    let (occupiedCars, state) = occupiedCars |> List.mapFold (doMoveOut second) state
+    let (occupiedCars, state) = occupiedCars |> List.mapFold (doMoveIn second) state
+    
+    let state = { state with standing = state.standing @ rides }
     let calls = rides |> List.map createCall
-    
+
     let (occupancies, bank) = occupiedCars |> List.unzip
-    
-    let bank = calls |> List.fold (fun call bank -> call |> dispatch bank) bank
+
+    let bank = calls |> List.fold (fun call bank -> call |> dispatchWithStrategy strategy bank) bank
     let bank = bank |> List.map tick
         
     let occupiedCars = List.zip occupancies bank
-    
-    let state = { state with occupiedCars = occupiedCars ; people = people }
+
+    let state = { state with occupiedCars = occupiedCars }
     
     bank, state
